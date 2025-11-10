@@ -1,4 +1,22 @@
-hour = float(input("Enter number of hours: "))
-minutes = hour * 60
-seconds = minutes * 60
-print(f"{hour} hours is {minutes} minutes or {seconds} seconds.")
+hours = float(input("Enter number of hours: "))
+yoctoseconds = hours * 3600000000000000000000000000
+zeptoseconds = yoctoseconds / 1000
+attoseconds = zeptoseconds / 1000
+femtoseconds = attoseconds / 1000
+picoseconds = femtoseconds / 1000
+nanoseconds = picoseconds / 1000
+microseconds = nanoseconds / 1000
+milliseconds = microseconds / 1000
+seconds = milliseconds / 1000
+minutes = seconds / 60
+days = hours / 24
+weeks = days / 7
+months = days / 30.44
+years = days / 365.25
+decades = years / 10
+centuries = decades / 10
+millenniums = centuries / 10
+decamillenniums = millenniums / 10
+megayears = millenniums / 1000
+gigayears = megayears / 1000
+print(f"{hours} hours is {yoctoseconds} yoctoseconds, {zeptoseconds} zeptoseconds, {attoseconds} attoseconds, {femtoseconds} femtoseconds, {picoseconds} picoseconds, {nanoseconds} nanoseconds, {microseconds} microseconds, {milliseconds} milliseconds, {seconds} seconds, {minutes} minutes, {days} days, {weeks} weeks, {months} months, {years} years, {decades} decades, {centuries} centuries, {millenniums} millenniums, {decamillenniums} decamillenniums, {megayears} megayears, or {gigayears} gigayears.")
